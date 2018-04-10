@@ -1,0 +1,29 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../cms-hax/cms-hax.html">
+<!--
+`hax-bookmarklet`
+Pure, Evil.
+
+@demo ../../demo/index.html
+
+-->
+<dom-module id="hax-bookmarklet">
+  <template>
+    <style>
+      :host {
+        display: block;
+        font-size: 1em;
+      }
+    </style>
+    <cms-hax open-default app-store-connection='{"url":"appstore.json"}' align="right"><video-player slot="autoloader"></video-player><wikipedia-query slot="autoloader"></wikipedia-query><pdf-element slot="autoloader"></pdf-element><lrn-table slot="autoloader"></lrn-table><media-image slot="autoloader"></media-image><magazine-cover slot="autoloader"></magazine-cover><meme-maker slot="autoloader"></meme-maker><paper-audio-player slot="autoloader"></paper-audio-player><drupal-token slot="autoloader"></drupal-token><place-holder slot="autoloader"></place-holder><lrn-math slot="autoloader"></lrn-math><lrn-vocab slot="autoloader"></lrn-vocab><a11y-gif-player slot="autoloader"></a11y-gif-player><code-editor slot="autoloader"></code-editor>
+    <slot></slot>
+    </cms-hax>
+  </template>
+  <script>
+    Polymer({
+      is: 'hax-bookmarklet',
+      properties: {
+      },
+    });
+  </script>
+</dom-module>
