@@ -1,0 +1,28 @@
+{
+  "name": "drupal-token",
+  "description": "A LRN element",
+  "main": "drupal-token.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.10.1",
+    "hax-body-behaviors": "LRNWebComponents/hax-body-behaviors#^1.2.0",
+    "elmsln-loading": "LRNWebComponents/elmsln-loading#^1.0.1",
+    "iron-ajax": "PolymerElements/iron-ajax#^2.1.3"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
+    "web-component-tester": "^4.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  },
+  "homepage": "https://github.com/LRNWebcomponents/drupal-token",
+  "version": "1.0.0",
+  "_release": "1.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.0",
+    "commit": "3ab89e03baf5e8c78c8d8f3eeb81f503e643f77a"
+  },
+  "_source": "https://github.com/LRNWebcomponents/drupal-token.git",
+  "_target": "^1.0.0",
+  "_originalSource": "LRNWebcomponents/drupal-token"
+}
