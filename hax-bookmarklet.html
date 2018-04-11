@@ -15,7 +15,7 @@ Pure, Evil.
         font-size: 1em;
       }
     </style>
-    <cms-hax open-default app-store-connection='{"url":"appstore.json"}'><video-player slot="autoloader"></video-player><wikipedia-query slot="autoloader"></wikipedia-query><pdf-element slot="autoloader"></pdf-element><lrn-table slot="autoloader"></lrn-table><media-image slot="autoloader"></media-image><magazine-cover slot="autoloader"></magazine-cover><meme-maker slot="autoloader"></meme-maker><paper-audio-player slot="autoloader"></paper-audio-player><drupal-token slot="autoloader"></drupal-token><place-holder slot="autoloader"></place-holder><lrn-math slot="autoloader"></lrn-math><lrn-vocab slot="autoloader"></lrn-vocab><a11y-gif-player slot="autoloader"></a11y-gif-player><code-editor slot="autoloader"></code-editor>
+    <cms-hax open-default app-store-connection="[[storeData]]"><video-player slot="autoloader"></video-player><wikipedia-query slot="autoloader"></wikipedia-query><pdf-element slot="autoloader"></pdf-element><lrn-table slot="autoloader"></lrn-table><media-image slot="autoloader"></media-image><magazine-cover slot="autoloader"></magazine-cover><meme-maker slot="autoloader"></meme-maker><paper-audio-player slot="autoloader"></paper-audio-player><drupal-token slot="autoloader"></drupal-token><place-holder slot="autoloader"></place-holder><lrn-math slot="autoloader"></lrn-math><lrn-vocab slot="autoloader"></lrn-vocab><a11y-gif-player slot="autoloader"></a11y-gif-player><code-editor slot="autoloader"></code-editor>
     <slot></slot>
     </cms-hax>
   </template>
@@ -23,6 +23,18 @@ Pure, Evil.
     Polymer({
       is: 'hax-bookmarklet',
       properties: {
+        /**
+         * Store data with path resolved.
+         */
+        storeData: {
+          type: Object,
+        },
+      },
+      ready: function() {
+        let json = {
+            "url": this.resolveUrl('appstore.json'),
+        };
+        this.storeData = json;
       },
     });
   </script>
